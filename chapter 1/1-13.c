@@ -27,20 +27,26 @@ int main(){
             is_word=0;
         }
     }
+    putchar('\n');
     for(;max_length>0;max_length--){
         for(i=0;i<nword;i++){
-            printf("          ");
+            printf("%5s"," ");
             if(word_length[i]>=max_length){
                 printf("#");
             }else{
-                putchar(' ');
+                printf("%s"," ");
             }
-            printf("          ");
+            printf("%5s"," ");
         }
         putchar('\n');
     }
     for(i=0;i<nword;i++){
-        printf("%21s",d[i]);
+        printf("-----------");
     }
+    printf("\n");
+    for(i=0;i<nword;i++){
+        printf("%11d",i);
+    }
+    putchar('\n');
     return 0;
 }
